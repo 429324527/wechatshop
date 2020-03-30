@@ -44,7 +44,7 @@
             </div>
             <button type="submit" class="btn btn-primary block full-width m-b">注 册</button>
 
-            <p class="text-muted text-center"><small>已经有账户了?</small><a href="/login"> CLICK </a>
+            <p class="text-muted text-center"><small>So~</small><a href="/login"> CLICK </a>
             </p>
 
         </form>
