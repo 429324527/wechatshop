@@ -1,66 +1,42 @@
-<!DOCTYPE html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- 360安全游览器使用webkit极速核 -->
-    <meta name="renderer" content="webkit" />
-    <!-- IE使用它支持的最高模式 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta property="wb:webmaster" content="bde65bab61e33f62" />
-    <meta name="description" content="精彩小说尽在腾讯文学,腾讯文学提供玄幻小说,武侠小说,原创小说,网游小说,都市小说,言情小说,青春小说,历史小说,军事小说,网游小说,科幻小说,恐怖小说,首发小说最新章节免费小说阅读小说下载txt,精彩尽在腾讯文学!2013年热门小说:无敌唤灵,无红色权力,无限曙光,余罪,兵临天下,盛唐风月,武帝,大官人,勇闯天涯,机甲天王" />
-    <meta name="keywords" content="腾讯文学,小说,小说网,言情小说,青春小说,玄幻小说,武侠小说,都市小说,历史小说,网络小说,小说下载,小说txt,小说全文阅读,原创网络文学,畅销图书,精品图书,传统出版,电子书" />
-    <meta property="qc:admins" content="151626767763051673016375" />
-    <meta name="baidu-site-verification" content="zgBU5TfI8l" />
-    <title> 老天有眼 </title>
-    <link rel="shortcut icon" type="image/x-icon" href="http://img1.chuangshi.qq.com/book/p1/ico/bookqq.ico" />
-    <link rel="Bookmark" type="image/x-icon" href="http://img1.chuangshi.qq.com/book/p1/ico/bookqq.ico" />
-    <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
-    <!-- prevent dom xss -->
-    <script type="text/javascript" src="/static/js/aq_common.js"></script>
-    <script type="text/javascript">
-        var userLang = "";
-    </script>
-    <script type="text/javascript" src="/static/js/base.js"></script>
-    <script type="text/javascript">
-        var addToBookshelfAjaxUrl = "/public/addToBookshelf.html";
-
-        $(function() {
+<!DOCTYPE html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><!-- 360安全游览器使用webkit极速核 --><meta name="renderer" content="webkit"/><!-- IE使用它支持的最高模式 --><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta property="wb:webmaster" content="bde65bab61e33f62"/><meta name="description" content="精彩小说尽在腾讯文学,腾讯文学提供玄幻小说,武侠小说,原创小说,网游小说,都市小说,言情小说,青春小说,历史小说,军事小说,网游小说,科幻小说,恐怖小说,首发小说最新章节免费小说阅读小说下载txt,精彩尽在腾讯文学!2013年热门小说:无敌唤灵,无红色权力,无限曙光,余罪,兵临天下,盛唐风月,武帝,大官人,勇闯天涯,机甲天王"/><meta name="keywords" content="腾讯文学,小说,小说网,言情小说,青春小说,玄幻小说,武侠小说,都市小说,历史小说,网络小说,小说下载,小说txt,小说全文阅读,原创网络文学,畅销图书,精品图书,传统出版,电子书"/><meta property="qc:admins" content="151626767763051673016375"/><meta name="baidu-site-verification" content="zgBU5TfI8l" /><title>QQ阅读 - 腾讯文学 - 文字之美，感动心灵</title><link rel="shortcut icon" type="image/x-icon" href="http://img1.chuangshi.qq.com/book/p1/ico/bookqq.ico"/><link rel="Bookmark" type="image/x-icon" href="http://img1.chuangshi.qq.com/book/p1/ico/bookqq.ico"/><link rel="stylesheet" type="text/css" href="static/css/base.css" /><!-- prevent dom xss --><script type="text/javascript" src="static/js/aq_common.js"></script><script type="text/javascript">        var userLang = "";
+    </script><script type="text/javascript" src="static/js/base.js">
+        <script src="/static/js/jquery-1.11.1.js"></script>
+    </script><script type="text/javascript">        var addToBookshelfAjaxUrl = "/public/addToBookshelf.html";
+        $(function(){
             //书架
             CS.bookshelf.init(addToBookshelfAjaxUrl);
-
             //页面特定链接/按钮点击分析
             $.getScript("http://pingjs.qq.com/tcss.ping.js");
         });
-    </script>
-    <script type="text/javascript">
-        var webSite = "book";
+    </script><script type="text/javascript">        var webSite = "book";
         var getLoginStatusAjaxUrl = "http://book.qq.com/ywlogin/getStatus.html",
             sendYWLoginStatusAjaxUrl = "http://book.qq.com/ywlogin/logined.html",
             logoutYWSsoAjaxUrl = "http://book.qq.com/public/logout.html",
             checkTokenAjaxUrl = "/api/checkTokenYw.html";
-
-        $(function() {
+        $(function(){
             //未登录时，更新登录状态
-            CS.ssoLogin.init(getLoginStatusAjaxUrl, sendYWLoginStatusAjaxUrl, logoutYWSsoAjaxUrl, checkTokenAjaxUrl, webSite);
+            CS.ssoLogin.init(getLoginStatusAjaxUrl, sendYWLoginStatusAjaxUrl,logoutYWSsoAjaxUrl, checkTokenAjaxUrl, webSite);
             CS.ssoLogin.getLoginStatus();
         });
-    </script>
-    <!--[if lt IE 7]><script src="/static/js/dd_belatedpng.js" mce_src="DD_belatedPNG.js"></script><script type="text/javascript">        DD_belatedPNG.fix('.prev, .next, .dotted, .fantasy, .edit_ctrl span, .edit_ctrl a, .line2, .box2_left em, .help, a.aleft, a.aright, .QQ, .bottom_tool a, .msgup, .msgdown, .juanbox li a, .p_searchbtn, #sword, .QQ_ICO, .QQ_icon, .cm_writer, #PLoginImg img');
-    </script><![endif]-->
-</head>
+    </script><!--[if lt IE 7]><script src="static/js/dd_belatedpng.js" mce_src="DD_belatedPNG.js"></script><script type="text/javascript">        DD_belatedPNG.fix('.prev, .next, .dotted, .fantasy, .edit_ctrl span, .edit_ctrl a, .line2, .box2_left em, .help, a.aleft, a.aright, .QQ, .bottom_tool a, .msgup, .msgdown, .juanbox li a, .p_searchbtn, #sword, .QQ_ICO, .QQ_icon, .cm_writer, #PLoginImg img');
+    </script><![endif]--></head><body><link rel="stylesheet" type="text/css" href="static/css/index.css" /><!-- 顶部导航 -->
+<div id="topNav" class="topNav"><h1  style="margin-left: 560px;color:#0f0f0f">--<a href="{{url('login')}}">点击扫码登录</a>--|--<a href="{{url('tel')}}">点击手机号登录</a>--|--<a href="{{url('zhu')}}">点击手机号注册</a>--</h1></div><!-- 顶部导航的模板 --><textarea id="topNavBarTpl" style="display:none;"><div class="pageCenter">
+        <!--顶部左边区块-->
+        <div id="topLeft" class="topLeft cf"><ul><li class="navNormal authority"><span><a class="topLink" href="http://book.qq.com" target="_blank">QQ阅读</a><b></b></span><div class="topSubList client"><a class="cs_ico" href="http://chuangshi.qq.com" target="_blank">创世中文</a><a class="yq_ico" href="http://yunqi.qq.com" target="_blank">云起书院</a><a class="ds_ico" href="http://dushu.qq.com" target="_blank">QQ阅读</a><a class="bookIntnet" href="http://www.qq.com" target="_blank" onclick="pgvSendClick({hottag:'ISD.SHOW.INDEX.LINK03'});">腾讯网</a></div></li><li class="navNormal authority"><span><a class="topLink" href="https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822" target="_blank">客户端下载</a><b></b></span><!-- <div class="topSubList client"><a class="bookIntnet" href="https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822" target="_blank">客户端下载</a><a class="bookIos" href="http://book.qq.com/act/reader/index.html" target="_blank">苹果端</a></div> --></li></ul></div><!--登录前后容器--><div class="loginBox"><%if isLogin%><div class="login_after"><span class="navline">|</span><a class="exit" attr="click:ywlogout;" href="javascript:;">退出</a><a class="userName" href="http://account.book.qq.com/usercenter/index.html">欢迎您，<%=userInfo.Nickname ? userInfo.Nickname : ''%></a></div><%else%><div class="login_before"><span class="navline">|</span><!-- <a class="reg" target="_blank" href="http://zc.qq.com/chs/index.html?from=pt">注册</a> --><a class="login" attr="click:openLoginPopup;" href="javascript:;">登录/注册</a></div><%/if%></div><!--顶部右边区块--><div class="topRight"><%if isLogin%><a class="myreader" href="http://account.book.qq.com/userfavorite/index.html">我的书架<b></b></a><%else%><a class="myreader" href="javascript:;">最近阅读<b></b></a><%/if%><a class="user_center" href="http://account.book.qq.com">个人中心<b></b></a><a class="author_Zone" href="https://write.qq.com/?siteid=3">作家专区</a><span class="navline">|</span><a class="pay" href="http://account.book.qq.com/public/recharge.html" target="_blank">充值</a><!-- 我的书架的下拉列表 --><div class="bookrack"><%if isLogin%><p><span class="ccc">书架藏书：<%=userInfo.collectBookNum ? userInfo.collectBookNum : 0%>本</span></p><div class="nav_hover_list cf"><a href="http://account.book.qq.com/userfavorite/index.html?bookshelf_show=2">最近阅读</a><%if userInfo.bookshelfList && userInfo.bookshelfList.length%><%each userInfo.bookshelfList as bookshelf i%><a class="a_nobg" href="http://account.book.qq.com/userfavorite/index.html?Favoriteid=<%=bookshelf.groupId%>"><%=bookshelf.groupName%></a><%/each%><%/if%></div><%else%><!-- 最近阅读列表 --><div class="nav_hover_list cf"><%if userInfo.recentReadList && userInfo.recentReadList.length%><%each userInfo.recentReadList as book i%><a class="a_nobg" href="<%=book.bookUrl%>"><%=book.bookName%></a><%/each%><%/if%></div><%if !userInfo.recentReadList || userInfo.recentReadList.length === 0%><p>最近没有阅读书</p><%/if%><%/if%></div><!-- 个人中心的下拉列表 --><div class="user_menu"><div class="nav_hover_list cf"><a href="http://account.book.qq.com/userfavorite/index.html">我的书架</a><a href="http://account.book.qq.com/usercenter/index.html">账户设置</a><a class="a_nobg" href="http://account.book.qq.com/usermoney/index.html">账务中心 </a><a class="a_nobg" href="https://write.qq.com/?siteid=3">作家专区</a></div></div><!--新短消息提示--><%if isLogin%><div id="topnav_msg" style="display:none;"><div id="pointy_msg"></div><p><a class="red2" href="http://account.book.qq.com/usermessage/index.html">有新短消息</a></p><a id="close_msg" href="javascript:" title="关闭">关闭</a></div><%/if%></div></div></textarea><script type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html", //获取用户信息
+        getUserNewMsgUrl = "http://account.book.qq.com/usermessage/getMessageNew.html",
+        webSite = "book";
+    23456789098654323456789864
+    var addToBookshelfAjaxUrl = "/public/addToBookshelf.html";
 
-<body>
-    <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
-    <!-- 顶部导航 -->
-    <div id="topNav" class="topNav"></div>
-    <!-- 顶部导航的模板 --><textarea id="topNavBarTpl" style="display:none;"><div class="pageCenter"><!--顶部左边区块--><div id="topLeft" class="topLeft cf"><ul><li class="navNormal authority"><span><a class="topLink" href="http://book.qq.com" target="_blank">QQ阅读</a><b></b></span><div class="topSubList client"><a class="cs_ico" href="http://chuangshi.qq.com" target="_blank">创世中文</a><a class="yq_ico" href="http://yunqi.qq.com" target="_blank">云起书院</a><a class="ds_ico" href="http://dushu.qq.com" target="_blank">QQ阅读</a><a class="bookIntnet" href="http://www.qq.com" target="_blank" onclick="pgvSendClick({hottag:'ISD.SHOW.INDEX.LINK03'});">腾讯网</a></div></li><li class="navNormal authority"><span><a class="topLink" href="https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822" target="_blank">客户端下载</a><b></b></span><!-- <div class="topSubList client"><a class="bookIntnet" href="https://yuedu.reader.qq.com/common/common/down/dist/index.html?actid=11822" target="_blank">客户端下载</a><a class="bookIos" href="http://book.qq.com/act/reader/index.html" target="_blank">苹果端</a></div> --></li></ul></div><!--登录前后容器--><div class="loginBox"><%if isLogin%><div class="login_after"><span class="navline">|</span><a class="exit" attr="click:ywlogout;" href="javascript:;">退出</a><a class="userName" href="http://account.book.qq.com/usercenter/index.html">欢迎您，<%=userInfo.Nickname ? userInfo.Nickname : ''%></a></div><%else%><div class="login_before"><span class="navline">|</span><!-- <a class="reg" target="_blank" href="http://zc.qq.com/chs/index.html?from=pt">注册</a> --><a class="login" attr="click:openLoginPopup;" href="javascript:;">登录/注册</a></div><%/if%></div><!--顶部右边区块--><div class="topRight"><%if isLogin%><a class="myreader" href="http://account.book.qq.com/userfavorite/index.html">我的书架<b></b></a><%else%><a class="myreader" href="javascript:;">最近阅读<b></b></a><%/if%><a class="user_center" href="http://account.book.qq.com">个人中心<b></b></a><a class="author_Zone" href="https://write.qq.com/?siteid=3">作家专区</a><span class="navline">|</span><a class="pay" href="http://account.book.qq.com/public/recharge.html" target="_blank">充值</a><!-- 我的书架的下拉列表 --><div class="bookrack"><%if isLogin%><p><span class="ccc">书架藏书：<%=userInfo.collectBookNum ? userInfo.collectBookNum : 0%>本</span></p><div class="nav_hover_list cf"><a href="http://account.book.qq.com/userfavorite/index.html?bookshelf_show=2">最近阅读</a><%if userInfo.bookshelfList && userInfo.bookshelfList.length%><%each userInfo.bookshelfList as bookshelf i%><a class="a_nobg" href="http://account.book.qq.com/userfavorite/index.html?Favoriteid=<%=bookshelf.groupId%>"><%=bookshelf.groupName%></a><%/each%><%/if%></div><%else%><!-- 最近阅读列表 --><div class="nav_hover_list cf"><%if userInfo.recentReadList && userInfo.recentReadList.length%><%each userInfo.recentReadList as book i%><a class="a_nobg" href="<%=book.bookUrl%>"><%=book.bookName%></a><%/each%><%/if%></div><%if !userInfo.recentReadList || userInfo.recentReadList.length === 0%><p>最近没有阅读书</p><%/if%><%/if%></div><!-- 个人中心的下拉列表 --><div class="user_menu"><div class="nav_hover_list cf"><a href="http://account.book.qq.com/userfavorite/index.html">我的书架</a><a href="http://account.book.qq.com/usercenter/index.html">账户设置</a><a class="a_nobg" href="http://account.book.qq.com/usermoney/index.html">账务中心 </a><a class="a_nobg" href="https://write.qq.com/?siteid=3">作家专区</a></div></div><!--新短消息提示--><%if isLogin%><div id="topnav_msg" style="display:none;"><div id="pointy_msg"></div><p><a class="red2" href="http://account.book.qq.com/usermessage/index.html">有新短消息</a></p><a id="close_msg" href="javascript:" title="关闭">关闭</a></div><%/if%></div></div></textarea>
-    <script type="text/javascript">
-        var getUserInfoAjaxUrl = "/public/showhead.html", //获取用户信息 getUserNewMsgUrl = "http://account.book.qq.com/usermessage/getMessageNew.html", webSite = "book"; var addToBookshelfAjaxUrl = "/public/addToBookshelf.html"; $(function(){ //书架 CS.bookshelf.init(addToBookshelfAjaxUrl);
-            //顶部导航条 CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl); });
-    </script>
-    <div class="pageCenter">
-        <div class="bookheader cf">
-            <div class="logo fl">
+    $(function(){
+        //书架
+        CS.bookshelf.init(addToBookshelfAjaxUrl);
+        //顶部导航条
+        CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);
+    });
+</script><div class="pageCenter">
+<div class="bookheader cf">
+<div class="logo fl">
                 <a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！" src="/static/picture/txwxlogo.jpg"></a>
             </div>
             <div class="titleSearch fl cf">
