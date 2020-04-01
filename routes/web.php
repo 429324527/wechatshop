@@ -27,7 +27,7 @@ Route::post('/save','Admin\LoginController@save');
 Route::get('/ing','Admin\LoginController@ing');
 Route::get('/lists','Admin\LoginController@lists');
 Route::get('/wechatout','Admin\LoginController@wechatout');     //微信
-Route::get('image','Admin\LoginController@image');
+Route::get('image','Admin\LoginController@image');   //扫码
 Route::get('log','Admin\LoginController@logs');
 
 Route::prefix('/student')->group(function () {
